@@ -1,0 +1,27 @@
+div {
+  box-sizing: border-box;
+}
+
+.App {
+}
+
+.header {
+  height: 64px;
+  background-color: blue;
+  border: solid 3px yellow;
+}
+
+.view {
+  height: calc(100vh - 64px);
+}
+.content {
+  height: 80%;
+  border: solid 3px yellow;
+  /* position: relative; */
+}
+
+.footer {
+  height: 20%;
+  background-color: gray;
+  border: solid 3px yellow;
+}
