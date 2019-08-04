@@ -1,4 +1,4 @@
-div {
+* {
   box-sizing: border-box;
 }
 
@@ -8,7 +8,6 @@ div {
 .header {
   height: 64px;
   background-color: blue;
-  border: solid 3px yellow;
 }
 
 .view {
@@ -16,12 +15,31 @@ div {
 }
 .content {
   height: 80%;
-  border: solid 3px yellow;
-  /* position: relative; */
+  position: relative;
+}
+
+.right-panel {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 0;
+  transition: width .3s ease-out;
+  background-color: coral;
+}
+.right-panel.opened {
+  width: 400px;
+}
+.panel {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  overflow: auto;
 }
 
 .footer {
   height: 20%;
   background-color: gray;
-  border: solid 3px yellow;
 }
